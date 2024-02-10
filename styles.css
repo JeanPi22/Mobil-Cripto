@@ -135,7 +135,15 @@ main {
     line-height: 1.6rem;
     color: #757575;
 }
+.main-tables-container {
+    display: flex;
+    height: 37rem;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;    
+}
 .main-currency-table {
+    scroll-snap-align: center;
     width: 70%;
     min-width: 23.5rem;
     max-width: 50rem;
@@ -150,6 +158,9 @@ main {
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
 }
+.main-currency-table .commissions-title {
+    color: var(--secondary-blue);
+}
 .currency-table--container {
     width: 90%;
     min-width: 23rem;
@@ -159,7 +170,7 @@ main {
 }
 .currency-table--container table {
     width: 100%;
-    height: 100%;
+    height: 100%;    
 }
 .currency-table--container td{
     width: 50%;
@@ -213,7 +224,6 @@ main {
     margin: 0 auto;
     margin-top: 1.5rem;
     padding: 0.8rem;
-    background-color: var(--soft-orange);
     border-radius: 0.8rem;
 }
 .currency-table--date p {
@@ -222,6 +232,12 @@ main {
     line-height: 1.5rem;
     color: var(--warm-black);
     
+}
+.rates{    
+    background-color: var(--soft-orange);
+}
+.commissions {
+    background-color: var(--soft-blue);
 }
 .main-product-detail {
     position: relative;
@@ -283,6 +299,15 @@ main {
 }
 .product-cards--container .clock {    
     background-image: url(./assets/icons/clock.svg);
+}
+.product-cards--container .eye {
+    background-image: url(./assets/icons/eye.svg);
+}
+.product-cards--container .dollar {
+    background-image: url(./assets/icons/dollar-sign.svg);
+}
+.product-cards--container .check {
+    background-image: url(./assets/icons/check-circle.svg);
 }
 .product--card-title {
     margin-bottom: 1.5rem;
