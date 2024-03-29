@@ -377,10 +377,10 @@ main {
     position: relative;
     scroll-snap-align: center;
     width: 70%;
-    min-width: 23rem;
+    min-width: 19rem;
     max-width: 30rem;
     height: 25rem;
-    margin: 5rem 2rem 0;
+    margin: 5rem 0.5rem 0;
     padding: 0 1.5rem;
     background-color: var(--just-white);
     border-radius: 1.5rem;
@@ -467,3 +467,4 @@ footer .left ul {
     text-decoration: none;
     color: var(--just-white);
 }
+
